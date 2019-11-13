@@ -8,7 +8,7 @@ pipeline{
 		}
 		stage("Start App"){
 			steps{
-				sh "docker-compose up -d db be"
+				sh "docker-compose up"
 			}
 		}
 	}
