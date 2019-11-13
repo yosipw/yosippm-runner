@@ -9,7 +9,7 @@ services:
       MYSQL_DATABASE: ppmtcourse
       MYSQL_USER: theuser
       MYSQL_PASSWORD: test
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: test
     volumes:
       - ./db-data:/var/lib/mysql
   be:
