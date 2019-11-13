@@ -8,8 +8,8 @@ services:
     environment:
       MYSQL_DATABASE: ppmtcourse
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: test
     volumes:
       - ./db-data:/var/lib/mysql
   be:
