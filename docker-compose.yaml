@@ -1,6 +1,6 @@
 version: "3"
 services:
-  db:
+  dbservice:
     image: mysql:5.7
     ports:
       - "3306:3306"
@@ -15,6 +15,6 @@ services:
   be:
     image: yosua161/ppm-be:latest      
     depends_on:
-      - db
+      - dbservice
     ports:
       - "8081:8081"
