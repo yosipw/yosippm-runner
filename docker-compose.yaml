@@ -16,3 +16,5 @@ services:
     image: yosua161/ppm-be:latest      
     depends_on:
       - db
+    ports:
+      - "8081:8081"
