@@ -12,10 +12,4 @@ pipeline{
 			}
 		}
 	}
-	post{
-		always{
-			sh "docker-compose down"
-			sh "rm -rf output/"
-		}
-	}
 }
