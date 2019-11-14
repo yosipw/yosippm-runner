@@ -24,3 +24,6 @@ services:
       - "8081:8081"
     networks:
       - backend
+# Networks to be created to facilitate communication between containers
+networks:
+  backend:
