@@ -23,6 +23,17 @@ services:
       - "8081:8081"
     networks:
       - backend
+      - frontend
+  fe:
+    image: yosua161/ppm-fe:latest
+    depends_on:
+      - be
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend
+
 # Networks to be created to facilitate communication between containers
 networks:
   backend:
+  frontend:
