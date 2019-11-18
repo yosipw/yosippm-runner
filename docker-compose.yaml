@@ -32,6 +32,8 @@ services:
       - "3000:3000"
     networks:
       - frontend
+    args:
+      REACT_APP_API_BASE_URL: http://13.229.71.53:8081/
 
 # Networks to be created to facilitate communication between containers
 networks:
