@@ -32,11 +32,6 @@ services:
       - "3000:80"
     networks:
       - frontend
-    build:
-      context: polling-app-client # Use an image built from the specified dockerfile in the `polling-app-client` directory.
-      dockerfile: Dockerfile
-      args:
-        REACT_APP_API_BASE_URL: http://13.229.71.53:8081/
 
 # Networks to be created to facilitate communication between containers
 networks:
