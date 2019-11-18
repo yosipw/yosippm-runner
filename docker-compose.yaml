@@ -33,6 +33,8 @@ services:
     networks:
       - frontend
     build:
+      context: polling-app-client # Use an image built from the specified dockerfile in the `polling-app-client` directory.
+      dockerfile: Dockerfile
       args:
         REACT_APP_API_BASE_URL: http://13.229.71.53:8081/
 
