@@ -29,7 +29,7 @@ services:
     depends_on:
       - be
     ports:
-      - "80:80"
+      - "90:80"
     networks:
       - frontend
 
